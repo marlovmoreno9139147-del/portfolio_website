@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Projects — Marlo Moreno</title>
+    <link rel="stylesheet" href="assets/tailwind.css">
+    <link rel="stylesheet" href="assets/icons.css">
+    <script src="assets/app.js" defer></script>
+</head>
+
+<body class="bg-stone-50 dark:bg-zinc-950 text-stone-900 dark:text-zinc-100 font-sans antialiased min-h-screen flex flex-col justify-between transition-colors duration-300">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-stone-50/80 dark:bg-zinc-950/80 border-b border-stone-200 dark:border-zinc-900 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 rounded-lg bg-zinc-900 text-stone-50 dark:bg-stone-100 dark:text-zinc-900 font-bold flex items-center justify-center text-sm shadow-sm group-hover:scale-105 transition-transform">
+                    M
+                </div>
+                <span class="font-semibold text-sm tracking-tight text-stone-900 dark:text-zinc-200 group-hover:text-stone-600 dark:group-hover:text-white">Marlo Moreno</span>
+            </a>
+
+            <!-- Dark / Light Theme Toggle -->
+            <button id="themeToggleBtn" aria-label="Toggle Theme" class="p-2.5 rounded-full border border-stone-200 dark:border-zinc-800 text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 hover:bg-stone-100 dark:hover:bg-zinc-900 transition-all duration-200">
+                <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
+                <i data-lucide="moon" class="w-4 h-4 block dark:hidden"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-12 w-full space-y-12">
+        <div class="space-y-3 border-b border-stone-200 dark:border-zinc-800 pb-8">
+            <a href="index.html" class="text-xs text-brand-500 hover:underline flex items-center gap-1">&larr; Back to Home</a>
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-stone-900 dark:text-white">All Projects</h1>
+            <p class="text-stone-600 dark:text-zinc-400 text-sm max-w-2xl">
+                A complete archive of web applications, UI design systems, and software projects I have designed and developed.
+            </p>
+        </div>
+
+        <!-- Full Projects List/Grid -->
+        <div>
+            <!-- Project cards go here -->
+            <!-- Projects Section -->
+<section id="projects" class="py-12 space-y-8">
+    <!-- Section Header -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-stone-200 dark:border-zinc-800 pb-4">
+        <div>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-stone-900 dark:text-white">
+                Featured Projects
+            </h2>
+            <p class="text-xs sm:text-sm text-stone-600 dark:text-zinc-400 mt-1">
+                A selection of applications, systems, and creative web solutions I've built.
+            </p>
+        </div>
+        <span class="text-xs font-mono text-stone-500 dark:text-zinc-500 uppercase tracking-widest">Selected Work (2024–2026)</span>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Project Card 1 (Featured Main Project) -->
+        <article class="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-zinc-900/50 border border-stone-200 dark:border-zinc-800/80 p-6 hover:border-stone-300 dark:hover:border-zinc-700 hover:bg-stone-50 dark:hover:bg-zinc-900/80 transition-all duration-300 hover:-translate-y-1">
+            <div class="space-y-4">
+                <!-- Top Meta & Category -->
+                <div class="flex items-center justify-between">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-brand-500/10 text-brand-600 dark:text-brand-500 border border-brand-500/20">
+                        Mobile
+                    </span>
+                    <span class="text-xs font-mono text-stone-500 dark:text-zinc-500">2026</span>
+                </div>
+
+                <!-- Title & Description -->
+                <div>
+                    <h3 class="text-xl font-bold text-stone-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-500 transition-colors flex items-center gap-2">
+                        Gamified Reviewer Design
+                        <svg class="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </h3>
+                    <p class="text-sm text-stone-600 dark:text-zinc-400 leading-relaxed mt-2">
+                        A mobile application that gamifies the reviewer experience, increasing user engagement and retention through interactive elements.
+                    </p>
+                </div>
+
+                <!-- Tech Stack Tags -->
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Laravel 11</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Tailwind CSS</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Vue 3</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">MySQL</span>
+                </div>
+            </div>
+
+            <!-- Card Footer Links -->
+            <div class="flex items-center justify-between border-t border-stone-200 dark:border-zinc-800/60 pt-4 mt-6 text-xs font-medium text-stone-600 dark:text-zinc-400">
+                <a href="https://www.figma.com/design/AetvrTZFmql8iwU6KPoo40/App_Dev_FinalProject?node-id=0-1&t=B2c2nduTc60nUxGR-1" target="_blank" class="hover:text-stone-950 dark:hover:text-white flex items-center gap-1">
+                    <svg class="w-3 h-[18px]" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M9.5 0C4.2533 0 0 4.2533 0 9.5S4.2533 19 9.5 19H19V0H9.5Z" fill="#F24E1E" />
+                        <path d="M28.5 0H19V19H28.5C33.7467 19 38 14.7467 38 9.5S33.7467 0 28.5 0Z" fill="#FF7262" />
+                        <path d="M0 28.5C0 33.7467 4.2533 38 9.5 38H19V19H9.5C4.2533 19 0 23.2533 0 28.5Z" fill="#A259FF" />
+                        <path d="M28.5 19H19V38H28.5C33.7467 38 38 33.7467 38 28.5S33.7467 19 28.5 19Z" fill="#1ABCFE" />
+                        <path d="M9.5 57C14.7467 57 19 52.7467 19 47.5V38H9.5C4.2533 38 0 42.2533 0 47.5S4.2533 57 9.5 57Z" fill="#0ACF83" />
+                    </svg>
+                    Open in Figma
+                </a>
+            </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-zinc-900/50 border border-stone-200 dark:border-zinc-800/80 p-6 hover:border-stone-300 dark:hover:border-zinc-700 hover:bg-stone-50 dark:hover:bg-zinc-900/80 transition-all duration-300 hover:-translate-y-1">
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+                        E-Commerce
+                    </span>
+                    <span class="text-xs font-mono text-stone-500 dark:text-zinc-500">2025</span>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-stone-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-500 transition-colors flex items-center gap-2">
+                        Bun Appetit - E-commerce Website
+                        <svg class="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </h3>
+                    <p class="text-sm text-stone-600 dark:text-zinc-400 leading-relaxed mt-2">
+                        Headless e-commerce solution featuring dynamic inventory management, instant search indexing, Stripe checkout integration, and webhooks.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Laravel Livewire</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Stripe API</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Alpine.js</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Redis</span>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between border-t border-stone-200 dark:border-zinc-800/60 pt-4 mt-6 text-xs font-medium text-stone-600 dark:text-zinc-400">
+                <a href="https://www.figma.com/design/sabgGTPjkEvQvRoGskDlgz/Restaurant-Website?node-id=189-2&t=qek743HSVCxNWCq9-1" target="_blank" class="hover:text-stone-950 dark:hover:text-white flex items-center gap-1">
+                    <svg class="w-3 h-[18px]" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M9.5 0C4.2533 0 0 4.2533 0 9.5S4.2533 19 9.5 19H19V0H9.5Z" fill="#F24E1E" />
+                        <path d="M28.5 0H19V19H28.5C33.7467 19 38 14.7467 38 9.5S33.7467 0 28.5 0Z" fill="#FF7262" />
+                        <path d="M0 28.5C0 33.7467 4.2533 38 9.5 38H19V19H9.5C4.2533 19 0 23.2533 0 28.5Z" fill="#A259FF" />
+                        <path d="M28.5 19H19V38H28.5C33.7467 38 38 33.7467 38 28.5S33.7467 19 28.5 19Z" fill="#1ABCFE" />
+                        <path d="M9.5 57C14.7467 57 19 52.7467 19 47.5V38H9.5C4.2533 38 0 42.2533 0 47.5S4.2533 57 9.5 57Z" fill="#0ACF83" />
+                    </svg>
+                    Open in Figma
+                </a>
+            </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-zinc-900/50 border border-stone-200 dark:border-zinc-800/80 p-6 hover:border-stone-300 dark:hover:border-zinc-700 hover:bg-stone-50 dark:hover:bg-zinc-900/80 transition-all duration-300 hover:-translate-y-1">
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-500/10 text-purple-700 dark:text-purple-400 border border-purple-500/20">
+                        Dev Tool
+                    </span>
+                    <span class="text-xs font-mono text-stone-500 dark:text-zinc-500">2025</span>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-stone-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-500 transition-colors flex items-center gap-2">
+                        CLI Task & Workflow Automator
+                        <svg class="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </h3>
+                    <p class="text-sm text-stone-600 dark:text-zinc-400 leading-relaxed mt-2">
+                        A lightweight developer tool designed to manage Git workflows, automate local deployment scripts, and manage environment variables.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">PHP / Zero</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Tailwind CLI</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Node.js</span>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between border-t border-stone-200 dark:border-zinc-800/60 pt-4 mt-6 text-xs font-medium text-stone-600 dark:text-zinc-400">
+                <a href="https://www.figma.com/design/AetvrTZFmql8iwU6KPoo40/App_Dev_FinalProject?node-id=0-1&t=B2c2nduTc60nUxGR-1" target="_blank" class="hover:text-stone-950 dark:hover:text-white flex items-center gap-1">
+                    <svg class="w-3 h-[18px]" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M9.5 0C4.2533 0 0 4.2533 0 9.5S4.2533 19 9.5 19H19V0H9.5Z" fill="#F24E1E" />
+                        <path d="M28.5 0H19V19H28.5C33.7467 19 38 14.7467 38 9.5S33.7467 0 28.5 0Z" fill="#FF7262" />
+                        <path d="M0 28.5C0 33.7467 4.2533 38 9.5 38H19V19H9.5C4.2533 19 0 23.2533 0 28.5Z" fill="#A259FF" />
+                        <path d="M28.5 19H19V38H28.5C33.7467 38 38 33.7467 38 28.5S33.7467 19 28.5 19Z" fill="#1ABCFE" />
+                        <path d="M9.5 57C14.7467 57 19 52.7467 19 47.5V38H9.5C4.2533 38 0 42.2533 0 47.5S4.2533 57 9.5 57Z" fill="#0ACF83" />
+                    </svg>
+                    Open in Figma
+                </a>
+            </div>
+        </article>
+
+        <!-- Project Card 4 -->
+        <article class="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-zinc-900/50 border border-stone-200 dark:border-zinc-800/80 p-6 hover:border-stone-300 dark:hover:border-zinc-700 hover:bg-stone-50 dark:hover:bg-zinc-900/80 transition-all duration-300 hover:-translate-y-1">
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500/10 text-blue-700 dark:text-blue-400 border border-blue-500/20">
+                        Web App
+                    </span>
+                    <span class="text-xs font-mono text-stone-500 dark:text-zinc-500">2024</span>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-stone-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-500 transition-colors flex items-center gap-2">
+                        Real-Time Chat & Workspace
+                        <svg class="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </h3>
+                    <p class="text-sm text-stone-600 dark:text-zinc-400 leading-relaxed mt-2">
+                        Collaborative messaging web app with dynamic channels, media attachments, and real-time user presence tracking via WebSockets.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">Laravel Reverb</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">React</span>
+                    <span class="px-2.5 py-1 text-xs rounded-md bg-stone-100 dark:bg-zinc-800/80 text-stone-700 dark:text-zinc-300 font-mono">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between border-t border-stone-200 dark:border-zinc-800/60 pt-4 mt-6 text-xs font-medium text-stone-600 dark:text-zinc-400">
+                <a href="https://www.figma.com/design/AetvrTZFmql8iwU6KPoo40/App_Dev_FinalProject?node-id=0-1&t=B2c2nduTc60nUxGR-1" target="_blank" class="hover:text-stone-950 dark:hover:text-white flex items-center gap-1">
+                    <svg class="w-3 h-[18px]" viewBox="0 0 38 57" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M9.5 0C4.2533 0 0 4.2533 0 9.5S4.2533 19 9.5 19H19V0H9.5Z" fill="#F24E1E" />
+                        <path d="M28.5 0H19V19H28.5C33.7467 19 38 14.7467 38 9.5S33.7467 0 28.5 0Z" fill="#FF7262" />
+                        <path d="M0 28.5C0 33.7467 4.2533 38 9.5 38H19V19H9.5C4.2533 19 0 23.2533 0 28.5Z" fill="#A259FF" />
+                        <path d="M28.5 19H19V38H28.5C33.7467 38 38 33.7467 38 28.5S33.7467 19 28.5 19Z" fill="#1ABCFE" />
+                        <path d="M9.5 57C14.7467 57 19 52.7467 19 47.5V38H9.5C4.2533 38 0 42.2533 0 47.5S4.2533 57 9.5 57Z" fill="#0ACF83" />
+                    </svg>
+                    Open in Figma
+                </a>
+            </div>
+        </article>
+
+    </div>
+</section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-stone-200 dark:border-zinc-900 py-8 bg-stone-50 dark:bg-zinc-950/50">
+        <div class="max-w-5xl mx-auto px-6 text-xs text-stone-500 dark:text-zinc-500 flex justify-between">
+            <p>© 2026 Marlo Moreno.</p>
+            <a href="index.html" class="hover:text-stone-900 dark:hover:text-zinc-300">Home</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
