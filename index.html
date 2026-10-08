@@ -24,15 +24,18 @@
     <script src="assets/app.js" defer></script>
 </head>
 
-<body class="bg-stone-50 dark:bg-zinc-950 text-stone-900 dark:text-zinc-100 font-sans antialiased min-h-screen transition-colors duration-200">
+<body
+    class="bg-stone-50 dark:bg-zinc-950 text-stone-900 dark:text-zinc-100 font-sans antialiased min-h-screen transition-colors duration-200">
 
     <!-- HEADER / NAVIGATION -->
-    <header class="fixed top-0 left-0 w-full z-50 glass-header border-b border-stone-200/60 dark:border-zinc-800/60 bg-stone-50/80 dark:bg-zinc-950/80 transition-colors duration-300">
+    <header
+        class="fixed top-0 left-0 w-full z-50 glass-header border-b border-stone-200/60 dark:border-zinc-800/60 bg-stone-50/80 dark:bg-zinc-950/80 transition-colors duration-300">
 
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <!-- Brand Logo / Name -->
             <a href="#" class="group flex items-center gap-2.5 text-lg font-bold tracking-tight">
-                <span class="w-9 h-9 rounded-xl bg-zinc-900 text-stone-50 dark:bg-stone-100 dark:text-zinc-900 flex items-center justify-center font-mono text-sm font-semibold group-hover:scale-105 transition-transform duration-300 shadow-sm">
+                <span
+                    class="w-9 h-9 rounded-xl bg-zinc-900 text-stone-50 dark:bg-stone-100 dark:text-zinc-900 flex items-center justify-center font-mono text-sm font-semibold group-hover:scale-105 transition-transform duration-300 shadow-sm">
                     M
                 </span>
                 <span class="tracking-wide">MARLO MORENO</span>
@@ -42,31 +45,39 @@
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600 dark:text-zinc-400">
                 <a href="#about" class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors">About</a>
                 <a href="#skills" class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Skills</a>
-                <a href="#projects" class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Projects</a>
+                <a href="#projects"
+                    class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Projects</a>
                 <a href="#contact" class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Contact</a>
             </nav>
 
             <!-- Actions (Theme Toggle & Mobile Menu) -->
             <div class="flex items-center gap-4">
                 <!-- Dark / Light Theme Toggle -->
-                <button id="themeToggleBtn" aria-label="Toggle Theme" class="p-2.5 rounded-full border border-stone-200 dark:border-zinc-800 text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 hover:bg-stone-100 dark:hover:bg-zinc-900 transition-all duration-200">
+                <button id="themeToggleBtn" aria-label="Toggle Theme"
+                    class="p-2.5 rounded-full border border-stone-200 dark:border-zinc-800 text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 hover:bg-stone-100 dark:hover:bg-zinc-900 transition-all duration-200">
                     <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
                     <i data-lucide="moon" class="w-4 h-4 block dark:hidden"></i>
                 </button>
 
                 <!-- Mobile Navigation Toggle -->
-                <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden p-2.5 rounded-xl border border-stone-200 dark:border-zinc-800 text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100">
+                <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu"
+                    class="md:hidden p-2.5 rounded-xl border border-stone-200 dark:border-zinc-800 text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100">
                     <i data-lucide="menu" class="w-5 h-5"></i>
                 </button>
             </div>
         </div>
 
         <!-- Mobile Menu Drawer -->
-        <div id="mobileMenu" class="hidden md:hidden border-b border-stone-200 dark:border-zinc-800 bg-stone-50 dark:bg-zinc-950 px-6 py-4 space-y-3">
-            <a href="#about" class="block text-sm font-medium text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 py-1">About</a>
-            <a href="#skills" class="block text-sm font-medium text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 py-1">Skills</a>
-            <a href="#projects" class="block text-sm font-medium text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 py-1">Projects</a>
-            <a href="#contact" class="block text-sm font-medium text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 py-1">Contact</a>
+        <div id="mobileMenu"
+            class="hidden md:hidden border-b border-stone-200 dark:border-zinc-800 bg-stone-50 dark:bg-zinc-950 px-6 py-4 space-y-3">
+            <a href="#about"
+                class="block text-sm font-medium text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 py-1">About</a>
+            <a href="#skills"
+                class="block text-sm font-medium text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 py-1">Skills</a>
+            <a href="#projects"
+                class="block text-sm font-medium text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 py-1">Projects</a>
+            <a href="#contact"
+                class="block text-sm font-medium text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 py-1">Contact</a>
         </div>
     </header>
 
@@ -79,7 +90,8 @@
                 <div class="lg:col-span-7 flex flex-col items-start space-y-6">
 
                     <!-- Availability Badge -->
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-teal-500/20 bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-medium">
+                    <div
+                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-teal-500/20 bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-medium">
                         <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
                         Available for new projects
                     </div>
@@ -89,73 +101,94 @@
                         <h2 class="text-sm uppercase tracking-widest font-mono text-stone-500 dark:text-zinc-400 mb-2">
                             Product Designer & Front-End Developer
                         </h2>
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-stone-900 dark:text-white leading-[1.1]">
+                        <h1
+                            class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-stone-900 dark:text-white leading-[1.1]">
                             Crafting clean, purposeful digital experiences.
                         </h1>
                     </div>
 
                     <!-- Short Introduction / Tagline -->
-                    <p class="text-base sm:text-lg text-stone-600 dark:text-zinc-400 leading-relaxed max-w-2xl font-normal">
-                        Hi, I’m <span class="text-stone-900 dark:text-zinc-100 font-medium">Marlo</span>. I bridge design aesthetics and functional code to build modern websites, intuitive web applications, and seamless brand systems.
+                    <p
+                        class="text-base sm:text-lg text-stone-600 dark:text-zinc-400 leading-relaxed max-w-2xl font-normal">
+                        Hi, I’m <span class="text-stone-900 dark:text-zinc-100 font-medium">Marlo</span>. I bridge
+                        design aesthetics and functional code to build modern websites, intuitive web applications, and
+                        seamless brand systems.
                     </p>
 
                     <!-- Call-to-action Buttons -->
                     <div class="pt-4 flex flex-wrap items-center gap-4 w-full sm:w-auto">
                         <!-- Primary CTA: View Projects -->
-                        <a href="#projects" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-stone-900 dark:bg-stone-100 text-stone-50 dark:text-zinc-900 font-medium text-sm hover:bg-stone-800 dark:hover:bg-white transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                        <a href="#projects"
+                            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-stone-900 dark:bg-stone-100 text-stone-50 dark:text-zinc-900 font-medium text-sm hover:bg-stone-800 dark:hover:bg-white transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5">
                             <span>View Projects</span>
                             <i data-lucide="arrow-right" class="w-4 h-4"></i>
                         </a>
 
                         <!-- Secondary CTA: Contact Me -->
-                        <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-stone-300 dark:border-zinc-800 bg-transparent text-stone-800 dark:text-zinc-200 font-medium text-sm hover:bg-stone-100 dark:hover:bg-zinc-900 transition-all hover:-translate-y-0.5">
+                        <a href="#contact"
+                            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-stone-300 dark:border-zinc-800 bg-transparent text-stone-800 dark:text-zinc-200 font-medium text-sm hover:bg-stone-100 dark:hover:bg-zinc-900 transition-all hover:-translate-y-0.5">
                             <span>Contact Me</span>
                             <i data-lucide="mail" class="w-4 h-4"></i>
                         </a>
 
                         <!-- Tertiary CTA: Download Resume -->
-                        <a href="assets/resume/Marlo-Moreno-Resume.pdf" download id="downloadResumeBtn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 font-medium text-sm transition-colors group">
-                            <i data-lucide="download" class="w-4 h-4 group-hover:translate-y-0.5 transition-transform"></i>
+                        <a href="assets/resume/Marlo-Moreno-Resume.pdf" download id="downloadResumeBtn"
+                            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-stone-600 dark:text-zinc-400 hover:text-stone-900 dark:hover:text-stone-100 font-medium text-sm transition-colors group">
+                            <i data-lucide="download"
+                                class="w-4 h-4 group-hover:translate-y-0.5 transition-transform"></i>
                             <span>Resume</span>
                         </a>
                     </div>
 
                     <!-- Tech Stack / Skills Pills -->
-                    <div class="pt-6 border-t border-stone-200 dark:border-zinc-800 w-full flex flex-wrap items-center gap-2 text-xs text-stone-500 dark:text-zinc-500 font-mono">
+                    <div
+                        class="pt-6 border-t border-stone-200 dark:border-zinc-800 w-full flex flex-wrap items-center gap-2 text-xs text-stone-500 dark:text-zinc-500 font-mono">
                         <span class="mr-2">Focus:</span>
-                        <span class="px-2.5 py-1 rounded-md bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300">UI/UX Design</span>
-                        <span class="px-2.5 py-1 rounded-md bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300">React / Next.js</span>
-                        <span class="px-2.5 py-1 rounded-md bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300">Tailwind CSS</span>
-                        <span class="px-2.5 py-1 rounded-md bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300">Mobile Application</span>
+                        <span
+                            class="px-2.5 py-1 rounded-md bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300">UI/UX
+                            Design</span>
+                        <span
+                            class="px-2.5 py-1 rounded-md bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300">React
+                            / Next.js</span>
+                        <span
+                            class="px-2.5 py-1 rounded-md bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300">Tailwind
+                            CSS</span>
+                        <span
+                            class="px-2.5 py-1 rounded-md bg-stone-100 dark:bg-zinc-900 text-stone-700 dark:text-zinc-300">Mobile
+                            Application</span>
                     </div>
 
                 </div>
 
                 <!-- Right Column: Profile Photo / Branding Image -->
                 <div class="lg:col-span-5 flex justify-center lg:justify-end">
-                    <div class="relative w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden bg-stone-200 dark:bg-zinc-900 border border-stone-200 dark:border-zinc-800 shadow-xl group">
+                    <div
+                        class="relative w-full max-w-sm aspect-[4/5] rounded-2xl overflow-hidden bg-stone-200 dark:bg-zinc-900 border border-stone-200 dark:border-zinc-800 shadow-xl group">
 
                         <!-- Background Decorative Accent -->
-                        <div class="absolute inset-0 bg-gradient-to-tr from-stone-900/10 via-transparent to-teal-500/20 dark:from-zinc-950/40 dark:to-teal-500/10 z-10 pointer-events-none"></div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-stone-900/10 via-transparent to-teal-500/20 dark:from-zinc-950/40 dark:to-teal-500/10 z-10 pointer-events-none">
+                        </div>
 
                         <!-- Profile Image Placeholder -->
-                        <img
-                            src="assets/images/profile-image.jpg"
-                            alt="Marlo Moreno - Profile"
+                        <img src="assets/images/profile-image.jpg" alt="Marlo Moreno - Profile"
                             class="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-105"
                             onerror="this.onerror=null; this.src='https://placehold.co/600x750/1c1917/fafaf9?text=Marlo+Moreno';" />
 
                         <!-- Floating Minimalist Card -->
-                        <div class="absolute bottom-4 left-4 right-4 z-20 p-4 rounded-xl glass-header bg-stone-900/80 dark:bg-zinc-950/80 text-white border border-white/10 shadow-lg backdrop-blur-md flex items-center justify-between">
+                        <div
+                            class="absolute bottom-4 left-4 right-4 z-20 p-4 rounded-xl glass-header bg-stone-900/80 dark:bg-zinc-950/80 text-white border border-white/10 shadow-lg backdrop-blur-md flex items-center justify-between">
                             <div>
                                 <p class="text-xs text-stone-400 font-mono">Based in</p>
                                 <p class="text-sm font-semibold text-stone-100">Pozorrubio, Pangasinan</p>
                             </div>
                             <div class="flex gap-2">
-                                <a href="#" aria-label="GitHub Profile" class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors">
+                                <a href="#" aria-label="GitHub Profile"
+                                    class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors">
                                     <i class="fa-brands fa-github w-4 h-4" aria-hidden="true"></i>
                                 </a>
-                                <a href="#" aria-label="LinkedIn Profile" class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors">
+                                <a href="#" aria-label="LinkedIn Profile"
+                                    class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors">
                                     <i class="fa-brands fa-linkedin w-4 h-4" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -169,66 +202,90 @@
     </main>
 
     <!-- SKILLS -->
-    <section id="skills" class="relative isolate overflow-hidden py-16 border-t border-stone-200 dark:border-zinc-900 bg-stone-100/50 dark:bg-zinc-900/30 scroll-mt-20">
-        <div aria-hidden="true" class="pointer-events-none absolute -top-24 right-[8%] h-72 w-72 rounded-full bg-teal-500/10 blur-3xl"></div>
-        <div aria-hidden="true" class="pointer-events-none absolute -bottom-36 -left-20 h-80 w-80 rounded-full bg-amber-500/5 blur-3xl"></div>
+    <section id="skills"
+        class="relative isolate overflow-hidden py-16 border-t border-stone-200 dark:border-zinc-900 bg-stone-100/50 dark:bg-zinc-900/30 scroll-mt-20">
+        <div aria-hidden="true"
+            class="pointer-events-none absolute -top-24 right-[8%] h-72 w-72 rounded-full bg-teal-500/10 blur-3xl">
+        </div>
+        <div aria-hidden="true"
+            class="pointer-events-none absolute -bottom-36 -left-20 h-80 w-80 rounded-full bg-amber-500/5 blur-3xl">
+        </div>
         <div class="relative z-10 max-w-6xl mx-auto px-6">
             <div class="mb-10 max-w-2xl">
-                <h2 class="flex items-center gap-2 text-xs uppercase font-mono tracking-widest text-stone-500 dark:text-zinc-400 mb-1">
+                <h2
+                    class="flex items-center gap-2 text-xs uppercase font-mono tracking-widest text-stone-500 dark:text-zinc-400 mb-1">
                     <span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>
                     What I Work With
                 </h2>
-                <h3 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-stone-100">Skills &amp; Expertise</h3>
-                <p class="mt-3 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">The technologies and creative skills I use to shape thoughtful digital experiences.</p>
+                <h3 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-stone-100">Skills &amp; Expertise
+                </h3>
+                <p class="mt-3 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">The technologies and creative
+                    skills I use to shape thoughtful digital experiences.</p>
             </div>
 
             <div class="mb-10">
-                <h4 class="mb-4 text-sm font-semibold text-stone-800 dark:text-zinc-200">Programming Languages &amp; Frameworks</h4>
+                <h4 class="mb-4 text-sm font-semibold text-stone-800 dark:text-zinc-200">Programming Languages &amp;
+                    Frameworks</h4>
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                    <div class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                    <div
+                        class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
                         <div class="relative">
-                            <span class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
+                            <span
+                                class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
                                 <i data-lucide="code-xml" class="w-5 h-5"></i>
                             </span>
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">HTML</h5>
                             <p class="mt-1 text-xs text-stone-500 dark:text-zinc-500">Semantic page structure</p>
                         </div>
                     </div>
-                    <div class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                    <div
+                        class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
                         <div class="relative">
-                            <span class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
+                            <span
+                                class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
                                 <i data-lucide="paintbrush" class="w-5 h-5"></i>
                             </span>
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">CSS</h5>
                             <p class="mt-1 text-xs text-stone-500 dark:text-zinc-500">Responsive visual styling</p>
                         </div>
                     </div>
-                    <div class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                    <div
+                        class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
                         <div class="relative">
-                            <span class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
+                            <span
+                                class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
                                 <i data-lucide="braces" class="w-5 h-5"></i>
                             </span>
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">JavaScript</h5>
                             <p class="mt-1 text-xs text-stone-500 dark:text-zinc-500">Interactive web experiences</p>
                         </div>
                     </div>
-                    <div class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                    <div
+                        class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
                         <div class="relative">
-                            <span class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
+                            <span
+                                class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
                                 <i data-lucide="smartphone" class="w-5 h-5"></i>
                             </span>
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">Flutter</h5>
                             <p class="mt-1 text-xs text-stone-500 dark:text-zinc-500">Cross-platform applications</p>
                         </div>
                     </div>
-                    <div class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                    <div
+                        class="group relative isolate overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
                         <div class="relative">
-                            <span class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
+                            <span
+                                class="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 dark:text-teal-400 motion-reduce:transition-none">
                                 <i data-lucide="server" class="w-5 h-5"></i>
                             </span>
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">PHP</h5>
@@ -241,64 +298,88 @@
             <div>
                 <h4 class="mb-4 text-sm font-semibold text-stone-800 dark:text-zinc-200">Other Skills</h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
-                        <span class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
+                    <div
+                        class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                        <span
+                            class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
                             <i data-lucide="palette" class="w-5 h-5 text-teal-600 dark:text-teal-400"></i>
                         </span>
                         <div class="relative">
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">UI/UX Design</h5>
-                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Designing clear, intuitive interfaces around real user needs.</p>
+                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Designing clear,
+                                intuitive interfaces around real user needs.</p>
                         </div>
                     </div>
-                    <div class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
-                        <span class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
+                    <div
+                        class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                        <span
+                            class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
                             <i data-lucide="monitor-smartphone" class="w-5 h-5 text-teal-600 dark:text-teal-400"></i>
                         </span>
                         <div class="relative">
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">Responsive Design</h5>
-                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Building consistent experiences across screen sizes and devices.</p>
+                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Building
+                                consistent experiences across screen sizes and devices.</p>
                         </div>
                     </div>
-                    <div class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
-                        <span class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
+                    <div
+                        class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                        <span
+                            class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
                             <i data-lucide="panels-top-left" class="w-5 h-5 text-teal-600 dark:text-teal-400"></i>
                         </span>
                         <div class="relative">
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">Web Development</h5>
-                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Turning ideas and designs into polished, functional websites.</p>
+                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Turning ideas and
+                                designs into polished, functional websites.</p>
                         </div>
                     </div>
-                    <div class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
-                        <span class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
+                    <div
+                        class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                        <span
+                            class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
                             <i data-lucide="shopping-cart" class="w-5 h-5 text-teal-600 dark:text-teal-400"></i>
                         </span>
                         <div class="relative">
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">E-commerce</h5>
-                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Creating straightforward and user-friendly online shopping flows.</p>
+                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Creating
+                                straightforward and user-friendly online shopping flows.</p>
                         </div>
                     </div>
-                    <div class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
-                        <span class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
+                    <div
+                        class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                        <span
+                            class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
                             <i data-lucide="git-branch" class="w-5 h-5 text-teal-600 dark:text-teal-400"></i>
                         </span>
                         <div class="relative">
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">Version Control</h5>
-                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Managing code changes and collaborating with Git and GitHub.</p>
+                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Managing code
+                                changes and collaborating with Git and GitHub.</p>
                         </div>
                     </div>
-                    <div class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
-                        <span class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
+                    <div
+                        class="group relative isolate flex gap-4 overflow-hidden rounded-2xl border border-stone-200 dark:border-zinc-800 bg-stone-50/90 dark:bg-zinc-950/90 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:transition-none"></span>
+                        <span
+                            class="relative flex w-10 h-10 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3 motion-reduce:transition-none">
                             <i data-lucide="lightbulb" class="w-5 h-5 text-teal-600 dark:text-teal-400"></i>
                         </span>
                         <div class="relative">
                             <h5 class="font-semibold text-stone-900 dark:text-stone-100">Prototyping</h5>
-                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Exploring and refining interface ideas before development.</p>
+                            <p class="mt-1 text-sm leading-relaxed text-stone-600 dark:text-zinc-400">Exploring and
+                                refining interface ideas before development.</p>
                         </div>
                     </div>
                 </div>
@@ -307,14 +388,17 @@
     </section>
 
     <!-- QUICK FEATURED PROJECTS PREVIEW -->
-    <section id="projects" class="py-16 border-t border-stone-200 dark:border-zinc-900 bg-stone-100/50 dark:bg-zinc-900/30">
+    <section id="projects"
+        class="py-16 border-t border-stone-200 dark:border-zinc-900 bg-stone-100/50 dark:bg-zinc-900/30">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
                 <div>
-                    <h2 class="text-xs uppercase font-mono tracking-widest text-stone-500 dark:text-zinc-400 mb-1">Portfolio Highlights</h2>
+                    <h2 class="text-xs uppercase font-mono tracking-widest text-stone-500 dark:text-zinc-400 mb-1">
+                        Portfolio Highlights</h2>
                     <h3 class="text-2xl font-bold text-stone-900 dark:text-stone-100">Featured Work</h3>
                 </div>
-                <a href="projects.html" class="text-sm font-medium text-brand-500 hover:text-brand-600 flex items-center gap-1">
+                <a href="projects.html"
+                    class="text-sm font-medium text-brand-500 hover:text-brand-600 flex items-center gap-1">
                     View all projects &rarr;
                 </a>
             </div>
@@ -322,26 +406,38 @@
             <!-- Project Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
-                <div class="group rounded-2xl bg-stone-50 dark:bg-zinc-950 border border-stone-200 dark:border-zinc-800 overflow-hidden hover:border-stone-300 dark:hover:border-zinc-700 transition-all duration-300">
+                <div
+                    class="group rounded-2xl bg-stone-50 dark:bg-zinc-950 border border-stone-200 dark:border-zinc-800 overflow-hidden hover:border-stone-300 dark:hover:border-zinc-700 transition-all duration-300">
                     <div class="aspect-video w-full bg-stone-200 dark:bg-zinc-900 overflow-hidden relative">
-                        <img src="assets/images/Mockup Design.png" alt="Mockup Design" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/800x450/27272a/fafaf9?text=Minimal+Dashboard';" />
+                        <img src="assets/images/Mockup Design.png" alt="Mockup Design"
+                            class="w-full h-full object-contain"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x450/27272a/fafaf9?text=Minimal+Dashboard';" />
                     </div>
                     <div class="p-6">
                         <span class="text-xs font-mono text-teal-600 dark:text-teal-400">Mobile App / UI Design</span>
-                        <h4 class="text-lg font-semibold text-stone-900 dark:text-stone-100 mt-1 mb-2">Gamified Reviewer Design</h4>
-                        <p class="text-sm text-stone-600 dark:text-zinc-400 line-clamp-2">A mobile application that gamifies the reviewer experience, increasing user engagement and retention through interactive elements.</p>
+                        <h4 class="text-lg font-semibold text-stone-900 dark:text-stone-100 mt-1 mb-2">Gamified Reviewer
+                            Design</h4>
+                        <p class="text-sm text-stone-600 dark:text-zinc-400 line-clamp-2">A mobile application that
+                            gamifies the reviewer experience, increasing user engagement and retention through
+                            interactive elements.</p>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="group rounded-2xl bg-stone-50 dark:bg-zinc-950 border border-stone-200 dark:border-zinc-800 overflow-hidden hover:border-stone-300 dark:hover:border-zinc-700 transition-all duration-300">
+                <div
+                    class="group rounded-2xl bg-stone-50 dark:bg-zinc-950 border border-stone-200 dark:border-zinc-800 overflow-hidden hover:border-stone-300 dark:hover:border-zinc-700 transition-all duration-300">
                     <div class="aspect-video w-full bg-stone-200 dark:bg-zinc-900 overflow-hidden relative">
-                        <img src="assets/images/Mockup Design 2.jpeg" alt="Project 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/800x450/27272a/fafaf9?text=Analytics+Platform';" />
+                        <img src="assets/images/Mockup Design 2.jpeg" alt="Project 2"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x450/27272a/fafaf9?text=Analytics+Platform';" />
                     </div>
                     <div class="p-6">
                         <span class="text-xs font-mono text-teal-600 dark:text-teal-400">E-commerce Website</span>
-                        <h4 class="text-lg font-semibold text-stone-900 dark:text-stone-100 mt-1 mb-2">Bun Appetit - E-commerce Website</h4>
-                        <p class="text-sm text-stone-600 dark:text-zinc-400 line-clamp-2">An e-commerce website for a bread and pastry shop. That offers a seamless shopping experience with a focus on quality and convenience.</p>
+                        <h4 class="text-lg font-semibold text-stone-900 dark:text-stone-100 mt-1 mb-2">Bun Appetit -
+                            E-commerce Website</h4>
+                        <p class="text-sm text-stone-600 dark:text-zinc-400 line-clamp-2">An e-commerce website for a
+                            bread and pastry shop. That offers a seamless shopping experience with a focus on quality
+                            and convenience.</p>
                     </div>
                 </div>
             </div>
@@ -349,107 +445,158 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="relative isolate overflow-hidden border-t border-stone-200 dark:border-zinc-900 py-20 bg-stone-50 dark:bg-zinc-950 scroll-mt-20">
-        <div aria-hidden="true" class="pointer-events-none absolute -top-32 -right-16 h-80 w-80 rounded-full bg-teal-500/10 blur-3xl"></div>
-        <div aria-hidden="true" class="pointer-events-none absolute -bottom-40 left-[15%] h-80 w-80 rounded-full bg-amber-500/5 blur-3xl"></div>
+    <section id="contact"
+        class="relative isolate overflow-hidden border-t border-stone-200 dark:border-zinc-900 py-20 bg-stone-50 dark:bg-zinc-950 scroll-mt-20">
+        <div aria-hidden="true"
+            class="pointer-events-none absolute -top-32 -right-16 h-80 w-80 rounded-full bg-teal-500/10 blur-3xl"></div>
+        <div aria-hidden="true"
+            class="pointer-events-none absolute -bottom-40 left-[15%] h-80 w-80 rounded-full bg-amber-500/5 blur-3xl">
+        </div>
         <div class="relative z-10 max-w-6xl mx-auto px-6">
             <div class="mb-10 max-w-2xl">
-                <h2 class="flex items-center gap-2 text-xs uppercase font-mono tracking-widest text-stone-500 dark:text-zinc-400 mb-1">
+                <h2
+                    class="flex items-center gap-2 text-xs uppercase font-mono tracking-widest text-stone-500 dark:text-zinc-400 mb-1">
                     <span class="h-1.5 w-1.5 rounded-full bg-teal-500"></span>
                     Get in Touch
                 </h2>
-                <h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-stone-900 dark:text-stone-100">Let's build something together.</h3>
-                <p class="mt-3 text-sm sm:text-base leading-relaxed text-stone-600 dark:text-zinc-400">Have a project in mind or just want to say hello? Send me a message or find me on social media.</p>
+                <h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-stone-900 dark:text-stone-100">Let's build
+                    something together.</h3>
+                <p class="mt-3 text-sm sm:text-base leading-relaxed text-stone-600 dark:text-zinc-400">Have a project in
+                    mind or just want to say hello? Send me a message or find me on social media.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-start">
                 <div class="lg:col-span-2 space-y-6">
-                    <a href="mailto:marlovmoreno9139147@gmail.com" class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                        <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400">
+                    <a href="mailto:marlovmoreno9139147@gmail.com"
+                        class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <span
+                            class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400">
                             <i data-lucide="mail" class="w-5 h-5"></i>
                         </span>
                         <span class="min-w-0">
-                            <span class="block text-xs font-mono uppercase tracking-widest text-stone-500 dark:text-zinc-500">Email me</span>
-                            <span class="mt-1 block break-all text-sm font-medium text-stone-900 group-hover:text-teal-700 dark:text-stone-100 dark:group-hover:text-teal-300">marlovmoreno9139147@gmail.com</span>
+                            <span
+                                class="block text-xs font-mono uppercase tracking-widest text-stone-500 dark:text-zinc-500">Email
+                                me</span>
+                            <span
+                                class="mt-1 block break-all text-sm font-medium text-stone-900 group-hover:text-teal-700 dark:text-stone-100 dark:group-hover:text-teal-300">marlovmoreno9139147@gmail.com</span>
                         </span>
-                        <i data-lucide="arrow-up-right" class="ml-auto h-4 w-4 shrink-0 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
+                        <i data-lucide="arrow-up-right"
+                            class="ml-auto h-4 w-4 shrink-0 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
                     </a>
 
                     <div>
                         <h4 class="mb-3 text-sm font-semibold text-stone-800 dark:text-zinc-200">Find me online</h4>
                         <div class="grid gap-3">
-                            <a href="https://www.facebook.com/marlo.moreno.735" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 dark:text-teal-400 motion-reduce:transition-none">
+                            <a href="https://www.facebook.com/marlo.moreno.735" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                                <span
+                                    class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 dark:text-teal-400 motion-reduce:transition-none">
                                     <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                                 </span>
                                 <span class="flex-1">
-                                    <span class="block text-sm font-semibold text-stone-900 dark:text-stone-100">Facebook</span>
+                                    <span
+                                        class="block text-sm font-semibold text-stone-900 dark:text-stone-100">Facebook</span>
                                     <span class="block text-xs text-stone-500 dark:text-zinc-500">Connect with me</span>
                                 </span>
-                                <i data-lucide="arrow-up-right" class="h-4 w-4 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
+                                <i data-lucide="arrow-up-right"
+                                    class="h-4 w-4 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
                             </a>
-                            <a href="https://www.instagram.com/itsjustmarlo21/" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 dark:text-teal-400 motion-reduce:transition-none">
+                            <a href="https://www.instagram.com/itsjustmarlo21/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                                <span
+                                    class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 dark:text-teal-400 motion-reduce:transition-none">
                                     <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                 </span>
                                 <span class="flex-1">
-                                    <span class="block text-sm font-semibold text-stone-900 dark:text-stone-100">Instagram</span>
-                                    <span class="block text-xs text-stone-500 dark:text-zinc-500">Follow my updates</span>
+                                    <span
+                                        class="block text-sm font-semibold text-stone-900 dark:text-stone-100">Instagram</span>
+                                    <span class="block text-xs text-stone-500 dark:text-zinc-500">Follow my
+                                        updates</span>
                                 </span>
-                                <i data-lucide="arrow-up-right" class="h-4 w-4 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
+                                <i data-lucide="arrow-up-right"
+                                    class="h-4 w-4 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
                             </a>
-                            <a href="https://x.com/MarloMoreno21" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 dark:text-teal-400 motion-reduce:transition-none">
+                            <a href="https://x.com/MarloMoreno21" target="_blank" rel="noopener noreferrer"
+                                class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                                <span
+                                    class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 dark:text-teal-400 motion-reduce:transition-none">
                                     <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
                                 </span>
                                 <span class="flex-1">
-                                    <span class="block text-sm font-semibold text-stone-900 dark:text-stone-100">X</span>
-                                    <span class="block text-xs text-stone-500 dark:text-zinc-500">Follow the conversation</span>
+                                    <span
+                                        class="block text-sm font-semibold text-stone-900 dark:text-stone-100">X</span>
+                                    <span class="block text-xs text-stone-500 dark:text-zinc-500">Follow the
+                                        conversation</span>
                                 </span>
-                                <i data-lucide="arrow-up-right" class="h-4 w-4 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
+                                <i data-lucide="arrow-up-right"
+                                    class="h-4 w-4 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
                             </a>
-                            <a href="https://linkedin.com/in/marlo-moreno-374591391" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
-                                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 dark:text-teal-400 motion-reduce:transition-none">
+                            <a href="https://linkedin.com/in/marlo-moreno-374591391" target="_blank"
+                                rel="noopener noreferrer"
+                                class="group flex items-center gap-4 rounded-2xl border border-stone-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal-500/50 hover:shadow-lg hover:shadow-teal-950/5 dark:hover:shadow-black/20 motion-reduce:transition-none motion-reduce:hover:transform-none">
+                                <span
+                                    class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 transition-transform duration-300 group-hover:scale-110 dark:text-teal-400 motion-reduce:transition-none">
                                     <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                                 </span>
                                 <span class="flex-1">
-                                    <span class="block text-sm font-semibold text-stone-900 dark:text-stone-100">LinkedIn</span>
-                                    <span class="block text-xs text-stone-500 dark:text-zinc-500">Connect professionally</span>
+                                    <span
+                                        class="block text-sm font-semibold text-stone-900 dark:text-stone-100">LinkedIn</span>
+                                    <span class="block text-xs text-stone-500 dark:text-zinc-500">Connect
+                                        professionally</span>
                                 </span>
-                                <i data-lucide="arrow-up-right" class="h-4 w-4 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
+                                <i data-lucide="arrow-up-right"
+                                    class="h-4 w-4 text-stone-400 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-teal-600 dark:group-hover:text-teal-400 motion-reduce:transition-none"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-3 rounded-3xl border border-stone-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/70 p-6 sm:p-8 shadow-xl shadow-stone-900/5 dark:shadow-black/20 backdrop-blur-sm">
+                <div
+                    class="lg:col-span-3 rounded-3xl border border-stone-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/70 p-6 sm:p-8 shadow-xl shadow-stone-900/5 dark:shadow-black/20 backdrop-blur-sm">
                     <div class="mb-6">
                         <h4 class="text-lg font-semibold text-stone-900 dark:text-stone-100">Send a message</h4>
-                        <p class="mt-1 text-sm text-stone-500 dark:text-zinc-400">I’ll get back to you as soon as I can.</p>
+                        <p class="mt-1 text-sm text-stone-500 dark:text-zinc-400">I’ll get back to you as soon as I can.
+                        </p>
                     </div>
 
 
-                    <form action="mailto:marlovmoreno9139147@gmail.com" method="post" enctype="text/plain" class="space-y-5">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <form action="https://formspree.io/f/mljgjkoe" method="post" enctype="text/plain"
+                        class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
-                                <label for="contact-name" class="mb-2 block text-sm font-medium text-stone-700 dark:text-zinc-300">Your name</label>
-                                <input id="contact-name" name="name" type="text" value="" autocomplete="name" required maxlength="100" aria-invalid="false" class="w-full rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder:text-zinc-600">
+                                <label for="contact-name"
+                                    class="mb-2 block text-sm font-medium text-stone-700 dark:text-zinc-300">Your
+                                    name</label>
+                                <input id="contact-name" name="name" type="text" value="" autocomplete="name" required
+                                    maxlength="100" aria-invalid="false"
+                                    class="w-full rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder:text-zinc-600">
 
                             </div>
                             <div>
-                                <label for="contact-email" class="mb-2 block text-sm font-medium text-stone-700 dark:text-zinc-300">Email address</label>
-                                <input id="contact-email" name="email" type="email" value="" autocomplete="email" required maxlength="254" aria-invalid="false" class="w-full rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder:text-zinc-600">
+                                <label for="contact-email"
+                                    class="mb-2 block text-sm font-medium text-stone-700 dark:text-zinc-300">Email
+                                    address</label>
+                                <input id="contact-email" name="email" type="email" value="" autocomplete="email"
+                                    required maxlength="254" aria-invalid="false"
+                                    class="w-full rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder:text-zinc-600">
 
                             </div>
                         </div>
                         <div>
-                            <label for="contact-message" class="mb-2 block text-sm font-medium text-stone-700 dark:text-zinc-300">Message</label>
-                            <textarea id="contact-message" name="message" rows="5" required maxlength="5000" aria-invalid="false" placeholder="Tell me a little about what you have in mind..." class="w-full resize-y rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm leading-relaxed text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder:text-zinc-600"></textarea>
+                            <label for="contact-message"
+                                class="mb-2 block text-sm font-medium text-stone-700 dark:text-zinc-300">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" required maxlength="5000"
+                                aria-invalid="false" placeholder="Tell me a little about what you have in mind..."
+                                class="w-full resize-y rounded-xl border border-stone-200 bg-stone-50 px-4 py-3 text-sm leading-relaxed text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder:text-zinc-600"></textarea>
 
                         </div>
-                        <button type="submit" class="group inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-stone-900 px-6 py-3.5 text-sm font-medium text-stone-50 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-stone-800 hover:shadow-lg dark:bg-stone-100 dark:text-zinc-900 dark:hover:bg-white motion-reduce:transition-none motion-reduce:hover:transform-none">
+                        <button type="submit"
+                            class="group inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-stone-900 px-6 py-3.5 text-sm font-medium text-stone-50 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-stone-800 hover:shadow-lg dark:bg-stone-100 dark:text-zinc-900 dark:hover:bg-white motion-reduce:transition-none motion-reduce:hover:transform-none">
                             Send Message
-                            <i data-lucide="send" class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transition-none"></i>
+                            <i data-lucide="send"
+                                class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transition-none"></i>
                         </button>
                     </form>
                 </div>
@@ -467,14 +614,17 @@
     </footer>
 
     <!-- RESUME MODAL / NOTIFICATION -->
-    <div id="resumeModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
-        <div class="bg-stone-50 dark:bg-zinc-900 border border-stone-200 dark:border-zinc-800 rounded-2xl p-6 max-w-md w-full shadow-2xl space-y-4">
+    <div id="resumeModal"
+        class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+        <div
+            class="bg-stone-50 dark:bg-zinc-900 border border-stone-200 dark:border-zinc-800 rounded-2xl p-6 max-w-md w-full shadow-2xl space-y-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-2">
                     <i data-lucide="file-text" class="w-5 h-5 text-teal-600 dark:text-teal-400"></i>
                     <h3 class="font-semibold text-stone-900 dark:text-stone-100">Resume Download</h3>
                 </div>
-                <button id="closeModalBtn" aria-label="Close Modal" class="p-1 rounded-lg text-stone-400 hover:text-stone-900 dark:hover:text-stone-100">
+                <button id="closeModalBtn" aria-label="Close Modal"
+                    class="p-1 rounded-lg text-stone-400 hover:text-stone-900 dark:hover:text-stone-100">
                     <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
             </div>
@@ -482,8 +632,11 @@
                 You are downloading <strong>Marlo_Moreno_Resume.pdf</strong>.
             </p>
             <div class="pt-2 flex justify-end gap-3">
-                <button id="cancelModalBtn" class="px-4 py-2 text-xs font-medium rounded-lg text-stone-600 dark:text-zinc-400 hover:bg-stone-200 dark:hover:bg-zinc-800 transition-colors">Cancel</button>
-                <a href="assets/resume/Marlo-Moreno-Resume.pdf" id="confirmDownloadBtn" download class="px-4 py-2 text-xs font-medium rounded-lg bg-stone-900 dark:bg-stone-100 text-stone-50 dark:text-zinc-900 hover:opacity-90 transition-opacity">Confirm Download</a>
+                <button id="cancelModalBtn"
+                    class="px-4 py-2 text-xs font-medium rounded-lg text-stone-600 dark:text-zinc-400 hover:bg-stone-200 dark:hover:bg-zinc-800 transition-colors">Cancel</button>
+                <a href="assets/resume/Marlo-Moreno-Resume.pdf" id="confirmDownloadBtn" download
+                    class="px-4 py-2 text-xs font-medium rounded-lg bg-stone-900 dark:bg-stone-100 text-stone-50 dark:text-zinc-900 hover:opacity-90 transition-opacity">Confirm
+                    Download</a>
             </div>
         </div>
     </div>
